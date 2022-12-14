@@ -59,7 +59,11 @@ Scanner scanner = new Scanner(System.in); //scanner object
             System.out.println("The area of the classroom is: " + area);
             System.out.println("The perimeter of the classroom is " + perimeter);
 
-
+        //BONUSSSS
+        System.out.println("Enter the length and  width of the room: ");
+        String widthInput = scanner1.nextLine();
+        scanner1.useDelimiter("");
+        float userBonusLength = scanner.nextFloat();
 
 
 
