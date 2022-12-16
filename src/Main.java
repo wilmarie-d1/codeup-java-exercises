@@ -13,7 +13,7 @@ public class Main {
 //        Change your code to assign the value 3.14159 to myString. What happens?
 //                     myString = 3.14159;
                      //strings ar inmutable
-//        Declare an long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
+//        Declare a long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
 //             long myNumber;
 //             System.out.println(myNumber);
 //        Change your code to assign the value 3.14 to myNumber. What do you notice?
@@ -84,6 +84,9 @@ public class Main {
         increReallyBigNumber++;
         ++increReallyBigNumber;
 //
+        MethodsExercises.getInteger(1,10);
+
+        MethodsExercises.factorial(10);
 //        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
     }
 }
