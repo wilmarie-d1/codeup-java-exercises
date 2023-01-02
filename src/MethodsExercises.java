@@ -1,11 +1,30 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
-
 public class MethodsExercises {
-public static void getInteger(int min, int max) {
+
+public  static int add(int num1, int num2){
+    return num1 + num2;
+}
+    public  static int sub(int num1, int num2){
+        return num1 - num2;
+
+    }
+    public  static int mult(int num1, int num2){
+        return num1 * num2;
+
+    }
+    public  static double div(double num1, double num2){
+        return num1/num2;
+
+    }
+    public  static double mod(double num1, double num2) {
+        return num1 % num2;
+    }
+
+    public static void getInteger(int min, int max) {
         Scanner clippy = new Scanner(System.in);
         System.out.print("Please enter a number between " +
-                min + "," + max);
+                min + "-" + max);
             int userInput = clippy.nextInt();
             clippy.nextLine();
         if (userInput >= min && userInput <= max){
@@ -16,17 +35,7 @@ public static void getInteger(int min, int max) {
             getInteger(min, max);
         }
     }
-//    Calculate the factorial of a number.
-//
-//    Prompt the user to enter an integer from 1 to 10.
-//    Display the factorial of the number entered by the user.
-//    Ask if the user wants to continue.
-//    Use a for loop to calculate the factorial.
-//    Assume that the user will enter an integer, but verify it’s between 1 and 10.
-//    Use the long type to store the factorial.
-//    Continue only if the user agrees to.
-//    A factorial is a number multiplied by each of the numbers before it.
-//    Factorials are denoted by the exclamation point (n!). Ex:
+
         public static int factorial(int num){
 
             long factorial = 1;
