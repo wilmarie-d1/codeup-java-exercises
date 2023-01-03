@@ -11,4 +11,7 @@ public class Rectangles {
     public  double getArea() {
         return length * width;
     }
+    public double getPerimeter () {
+       return (2*length) + (2*width);
+    }
 }
