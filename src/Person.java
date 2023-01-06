@@ -42,7 +42,6 @@ public class Person {
 //        System.out.println(person1.getName());
 //        System.out.println(person2.getName());
 
-
     }
 
 }
