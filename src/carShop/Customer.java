@@ -1,6 +1,6 @@
 package carShop;
 
- class Customer {
+ class Customer implements Describable{
     //Inside carShop create another class called Customer and make instance fields that can't be accessed outside Customer, these fields should be string called firstName and lastName. Create a constructor that sets firstName and lastName. Write getters and setters for each property.
 
     private String firstName;
@@ -22,6 +22,11 @@ package carShop;
     public void setLastName(String last) {
         this.lastName = last;
     }
+
+     @Override
+     public String describe(String details) {
+         return null;
+     }
 //
 //Create an interface named Describable
 //
