@@ -16,17 +16,52 @@ public class runner {
         String[] words = str.split("\\s+");
         return words.length;
     }
+    //Create a public static method called Calculator that takes in two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers
+    public static double Calculator(double num1, double num2, char operator) {
+        switch (operator) {
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 - num2;
+            case '*':
+                return num1 * num2;
+            case '/':
+                if(num2 == 0) {
+                    System.out.println("Cannot divide by zero");
+                    return 0;
+                }
+                return num1 / num2;
+            default:
+                System.out.println("Invalid operator");
+                return 0;
+        }
+    }
+    //Create a public static method called cardHidden that takes a credit card number as a string and only displays the last four characters. The rest of the card number must be replaced by ************.
+    public static String cardHidden(String cardNumber) {
+        if (cardNumber.length() < 4) {
+            return "Invalid card number";
+        }
+        int maskLength = cardNumber.length() - 4;
+        String mask = "";
+        for (int i = 0; i < maskLength; i++) {
+            mask += "*";
+        }
+        return mask + cardNumber.substring(maskLength);
+    }
+    //Create a public static method called reverseOdd that given a string, reverse all the words which have odd length. The even length words are not changed
+    public static String reverseOdd(String input) {
+        String[] words = input.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].length() % 2 != 0) {
+                words[i] = new StringBuilder(words[i]).reverse().toString();
+            }
+        }
+        return String.join(" ", words);
+    }
+
 }
 
 
-
-    //
-    //Create a public static method called Calculator that takes in two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers
-    //
-    //Create a public static method called cardHidden that takes a credit card number as a string and only displays the last four characters. The rest of the card number must be replaced by ************.
-    //
-    //Create a public static method called reverseOdd that given a string, reverse all the words which have odd length. The even length words are not changed
-    //
     //Create a package called bigDinner. Inside bigDinner create a class called dinnerApp where your main method will be in order to test the following questions
     //
     //Inside bigDinner create a new class called Dinner. Make instance fields that can't be accessed outside Dinner. These fields should be of type String named appetizer, drink, side, meal, and dessert. Create a constructor that sets the appetizer, drink, side, meal, and dessert. Write getters and setters for each property.
