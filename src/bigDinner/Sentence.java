@@ -4,10 +4,10 @@ public interface Sentence {
     //Create an interface named Sentence inside bigDinner
     //
     //Specify an instance method named myDinner that accepts no arguments and returns a String.
-    default String myDinner() {
-        return myDinner();
-    }
-//    String myDinner(String string);
+//    default String myDinner() {
+//        return myDinner();
+//    }
+    String myDinner();
 
     //Change your Dinner class so that it implements the Sentence interface.
 
