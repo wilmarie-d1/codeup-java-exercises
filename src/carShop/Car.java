@@ -2,7 +2,7 @@ package carShop;
 
  class Car {
 
-//Create a package called carShop. Inside carShop create a new class called Car. Make instance fields that can't be accessed outside Car. These fields should be of type String named model, make, color, and an int named year. Create a constructor that sets the model, make, color, and year. Write getters and setters for each property.(Remember we can generate these by right clicking -> 'Generate' -> Getters and Setters)
+     //Create a package called carShop. Inside carShop create a new class called Car. Make instance fields that can't be accessed outside Car. These fields should be of type String named model, make, color, and an int named year. Create a constructor that sets the model, make, color, and year. Write getters and setters for each property.(Remember we can generate these by right clicking -> 'Generate' -> Getters and Setters)
         private String model;
         private String make;
         private String color;

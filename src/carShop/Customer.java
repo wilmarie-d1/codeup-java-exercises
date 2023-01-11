@@ -25,8 +25,9 @@ package carShop;
 
      @Override
      public String describe(String details) {
-         return null;
+         return details;
      }
+
 //
 //Create an interface named Describable
 //
