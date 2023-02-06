@@ -37,13 +37,13 @@ public class GradesApplication {
         wilmarie.addGrade(89);
         wilmarie.addGrade(100);
         wilmarie.addGrade(50);
-        students.put("wilmarie-d", wilmarie);
+        students.put("wilmarie-d1", wilmarie);
 
         Student matt = new Student("matt");
         matt.addGrade(98);
         matt.addGrade(72);
         matt.addGrade(83);
-        students.put("matthew", matt);
+        students.put("mattymatt", matt);
 
         Student jimmy = new Student("jimmy");
         jimmy.addGrade(54);
